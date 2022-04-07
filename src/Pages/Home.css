@@ -7,13 +7,9 @@ background-size: cover;
 height: 100%;
 }
 
-.fondo{
-    width: 100%;
-    height: 100%;
-}
-
-h1{
-  position: relative;
+.title{
+  display: flex;
+  justify-content: center;
   font-family: GameofThrones;
   font-size: 20px;
   font-weight: normal;
@@ -21,6 +17,7 @@ h1{
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
-  color: white;
-  z-index: -1;
+  font-size: 200px;
+  position: absolute;
+  color: whitesmoke;
 }

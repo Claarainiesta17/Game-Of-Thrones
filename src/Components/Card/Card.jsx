@@ -9,7 +9,7 @@ export default function({character}) {
                 <section key={character.id}>
                     <img src={character.image} alt={character.id}/>
                    <article>
-                   <h1>{character.name}</h1>
+                   <h1 class="character-name">{character.name}</h1>
                    </article>
                 </section>
             </div>
