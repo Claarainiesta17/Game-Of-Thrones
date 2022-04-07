@@ -1,12 +1,40 @@
 import './App.css';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+
+import Navigator from './NavFooter/Navigator';
+import Home from './Pages/Home';
+import CharactersPage from './Pages/CharacterPage/CharactersPage';
+import Charactersdetails from './Pages/CharacterPage/Charactersdetails';
+import Casas from './Pages/CasasPage/Casas';
+import Cronologia from './Pages/Cronologia';
+
 
 function App() {
   return (
+    <Router>
+      
     <div className="App">
-    <body>
-      <img class="fondo-pantalla" src="https://www.fondosdepantalla.top/wp-content/uploads/2016/05/Juego-de-tronos-Fondosdepantalla.top_-1.jpg" alt=""/>
-    </body>
+      
+    <div className='Footnav'>
+    <Navigator/> </div>
+
     </div>
+      <Routes>
+        <Route Path="/" element={<Home/>}/>
+        <Route path="/characters" element={<CharactersPage/>}/>
+        <Route path="/characters/:id" element={<Charactersdetails/>}/>
+        <Route path="/casas" element={<Casas/>}/>
+        <Route path="/cronologia" element={<Cronologia/>}/>
+
+     
+ 
+    
+     </Routes>
+    
+  
+    
+    </Router>
+    
   );
 }
 

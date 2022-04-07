@@ -1,0 +1,12 @@
+body{
+    background-color: black;
+ 
+}
+
+.Galeria{
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
