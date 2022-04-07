@@ -7,6 +7,7 @@ import CharactersPage from './Pages/CharacterPage/CharactersPage';
 import Charactersdetails from './Pages/CharacterPage/Charactersdetails';
 import Casas from './Pages/CasasPage/Casas';
 import Cronologia from './Pages/Cronologia';
+import Footer from './Components/Footer/Footer';
 
 
 function App() {
@@ -14,10 +15,9 @@ function App() {
     <Router>
       
     <div className="App">
-      
-    <div className='Footnav'>
-    <Navigator/> </div>
 
+    <Navigator/>
+    <Home/>
     </div>
       <Routes>
         <Route Path="/" element={<Home/>}/>
@@ -26,12 +26,11 @@ function App() {
         <Route path="/casas" element={<Casas/>}/>
         <Route path="/cronologia" element={<Cronologia/>}/>
 
-     
  
     
      </Routes>
     
-  
+  <Footer/>
     
     </Router>
     

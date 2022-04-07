@@ -7,34 +7,20 @@
     height: 100%;
 }*/
 
-
-.banderas{
-    display: flex;
-    justify-content: end;
-    margin-left: 1140px;
-    gap: 30px;
-    padding: 20px;
-    position: absolute;
-}
-
-img{
-    width: 60px;
-    height: 60px;
-}
-
 .fondo{
     width: 100%;
     height: 100%;
 }
 
 h1{
-  position: absolute;
+  position: relative;
   font-family: GameofThrones;
-  font-size: 14px;
+  font-size: 20px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
   color: white;
+  z-index: -1;
 }

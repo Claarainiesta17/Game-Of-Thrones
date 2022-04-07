@@ -1,27 +1,14 @@
-.nav{
-    margin: 0;
-}
-
-ul{
+.banderas{
     display: flex;
-    justify-content: space-around;
-    align-items: flex-end;
-    align-content: flex-end;
-    list-style: none;
-  font-family: GameofThrones;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  margin: 0;
+    justify-content: end;
+    margin-left: 1140px;
+    gap: 30px;
+    padding: 20px;
+    position: relative;
+    margin-right: 20px;
 }
 
-a{
-    color: antiquewhite;
-    text-decoration: none;
-    font-size: large;
-    text-transform: uppercase;
-    font-size: 36px;
-    background-color: none;
+.logo1, .logo2{
+    width: 70px;
+    height: 70px;
 }
