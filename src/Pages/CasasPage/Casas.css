@@ -1,3 +1,10 @@
 h1{
     color: antiquewhite;
 }
+.c-gallery{
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
