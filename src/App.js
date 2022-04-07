@@ -25,7 +25,7 @@ function App() {
         <Route path="/characters" element={<CharactersPage/>}/>
         <Route path="/characters/:id" element={<Charactersdetails/>}/>
         <Route path="/casas" element={<Casas/>}/>
-        <Route path="/casas/:name" element={<Casasdetails/>}/>
+        <Route path="/casas/:id" element={<Casasdetails/>}/>
         <Route path="/cronologia" element={<Cronologia/>}/>
 
      

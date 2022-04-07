@@ -1,14 +1,14 @@
 import { generatePath, Link } from "react-router-dom"
-import Card from "./Card"
 
-export default function Card_casa({casa}){
+
+export default function ({casa}){
     return( 
     
-            <Link to={generatePath("/casas/:name", { name:casa.name })}>
+            <Link to={generatePath('/casas/:name', { name:casa.name })}>
             
-            <div className="Galeria">
+            <div>
               <figure key={casa.id}>
-            <img src={casa.logoURL} alt={casa.logoURL}/>
+            <img src={casa.logoURL} alt={casa.id}/>
             <h2>{casa.name}</h2>
             
           </figure></div>

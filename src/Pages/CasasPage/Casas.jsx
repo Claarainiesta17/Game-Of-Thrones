@@ -20,7 +20,7 @@ export default function Casas(){
 
     return(
         
-        <div className="Galeria">
+        <div className="c-gallery">
             {casas.map((casa)=>(
                 <Card_Casa casa={casa}/>
             ))}
