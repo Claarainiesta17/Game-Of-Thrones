@@ -3,7 +3,7 @@ body{
  
 }
 
-.Galeria{
+.c-gallery{
     background-color: black;
     display: flex;
     flex-wrap: wrap;

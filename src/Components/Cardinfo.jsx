@@ -1,4 +1,4 @@
-
+import './Cardinfo.css';
 
 export default function Cardinfo({character}){
     return(

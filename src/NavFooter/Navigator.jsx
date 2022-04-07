@@ -4,11 +4,12 @@ import "./nav.css"
 
 export default function Navigator(){
     return(
-        <div>
-        <Link to="/">Home</Link>   
-        <Link to="/characters"> Personajes</Link>
-        <Link to="/casas"> Casas</Link>
-        <Link to="/cronologia"> Cronologia</Link>
+        <div className="nav">
+        <ul>
+        <li><Link to="/characters"> Personajes</Link></li>
+        <li><Link to="/casas"> Casas</Link></li>
+        <li><Link to="/cronologia"> Cronologia</Link></li>
+        </ul>
         </div>
     )
 
