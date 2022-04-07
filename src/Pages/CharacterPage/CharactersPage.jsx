@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-import Card from "../../Components/Card";
+import Card from "../../Components/Card/Card";
 import "./character.css"
 
 export default function CharactersPage(){
@@ -21,7 +21,7 @@ export default function CharactersPage(){
     
   return (
      
-    <div className="Galeria">
+    <div className="c-gallery">
       {characters.map((character) => (
         <Card character={character} />
       ))}
