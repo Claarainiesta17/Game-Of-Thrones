@@ -1,13 +1,12 @@
 .banderas{
     display: flex;
     justify-content: end;
-    gap: 30px;
-    padding: 20px;
-    position: absolute;
-    margin-left: 75%;
+    width: 100%;
 }
 
 .logo1, .logo2{
     width: 70px;
     height: 70px;
+    margin-right: 40px;
+    margin-top: 30px;
 }

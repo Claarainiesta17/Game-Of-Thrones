@@ -1,9 +1,7 @@
 @media screen and (min-width: 480px){}
 
 .App {
-  text-align: center;
+  margin-top: -20px;
+  margin-bottom: -20px;
 }
 
-.fondo-pantalla{
-  width: 100%;
-}

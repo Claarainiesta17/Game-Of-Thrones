@@ -1,11 +1,11 @@
-import "./Home.css"
+import "./Home.css";
 
 
 export default function Home(){
     return(
-        
-        <div>
-        <h1 class="titulo">GAMES OF THRONES</h1>
+
+        <div className="home">
+        <h1 className="titulo">GAMES OF <br/>THRONES</h1>
         </div>
     )
 }
