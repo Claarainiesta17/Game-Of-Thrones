@@ -4,9 +4,9 @@ import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import Navigator from './NavFooter/Navigator';
 import Home from './Pages/Home/Home';
 import CharactersPage from './Pages/CharacterPage/CharactersPage';
-import Charactersdetails from './Pages/CharacterPage/Charactersdetails';
-import Casasdetails from './Pages/CasasPage/Casasdetails';
-import Cronologia from './Pages/Cronologia';
+import Charactersdetails from './Pages/CharactersdetailPage/Charactersdetails';
+import Casasdetails from './Pages/CasasdetailPage/Casasdetails';
+import Cronologia from './Pages/Cronologia/Cronologia';
 import Footer from './Components/Footer/Footer';
 import Casas from './Pages/CasasPage/Casas';
 
