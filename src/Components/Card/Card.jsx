@@ -7,7 +7,7 @@ export default function({character}) {
         <Link to={generatePath('/characters/:name', {name: character.name})}>
             <div>
                 <section key={character.id}>
-                    <img src={character.image} alt={character.id}/>
+                    <img class="imagen-personajes" src={character.image} alt={character.id}/>
                    <article>
                    <h1 class="character-name">{character.name}</h1>
                    </article>

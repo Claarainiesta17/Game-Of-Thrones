@@ -1,5 +1,5 @@
 import { generatePath, Link } from "react-router-dom"
-
+import './Card_casa.css';
 
 export default function ({casa}){
     return( 
@@ -8,7 +8,7 @@ export default function ({casa}){
             
             <div>
               <figure key={casa.id}>
-            <img src={casa.logoURL} alt={casa.id}/>
+            <img class="imagen-casa" src={casa.logoURL} alt={casa.id}/>
             <h2>{casa.name}</h2>
             
           </figure></div>

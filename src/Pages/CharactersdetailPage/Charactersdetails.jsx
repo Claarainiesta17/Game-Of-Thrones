@@ -1,7 +1,8 @@
+import './Charactersdetail.css'
 import axios from "axios";
 import { useEffect , useState} from "react";
 import { useParams } from "react-router-dom";
-import Cardinfo from "../../Components/Cardinfo";
+import Cardinfo from "../../Components/Cardinfo/Cardinfo";
 
 export default function Charactersdetails(){
 
