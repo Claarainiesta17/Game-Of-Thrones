@@ -1,14 +1,14 @@
 import './App.css';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
-import Search from './Components/Search/Search';
+
 import Navigator from './NavFooter/Navigator';
 import Home from './Pages/Home';
 import CharactersPage from './Pages/CharacterPage/CharactersPage';
 import Charactersdetails from './Pages/CharacterPage/Charactersdetails';
-import Casas from './Pages/CasasPage/Casas';
 import Casasdetails from './Pages/CasasPage/Casasdetails';
 import Cronologia from './Pages/Cronologia';
 import Footer from './Components/Footer/Footer';
+import Casas from './Pages/CasasPage/Casas';
 
 
 
@@ -18,6 +18,7 @@ function App() {
       
     <div className="App">
 
+    
     <Navigator/>
     <Home/>
     </div>

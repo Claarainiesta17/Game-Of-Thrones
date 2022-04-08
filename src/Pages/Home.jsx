@@ -6,7 +6,7 @@ export default function Home(){
     return(
         
         <div>
-        <h1 class="title">GAMES OF THRONES</h1>
+        <h1 className="title">GAMES OF THRONES</h1>
         </div>
     )
 }
