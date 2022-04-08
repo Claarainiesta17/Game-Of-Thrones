@@ -7,7 +7,7 @@ background-size: cover;
 height: 100%;
 }
 
-.title{
+.titulo{
   display: flex;
   justify-content: center;
   font-family: GameofThrones;

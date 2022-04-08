@@ -1,6 +1,6 @@
 import axios from "axios"
 import { useEffect, useState } from "react"
-import Card_Casa from "../../Components/Card_casa";
+import Card_Casa from "../../Components/Card_casa/Card_casa";
 import "./Casas.css"
 
 
@@ -19,11 +19,12 @@ export default function Casas(){
    },[])
 
     return(
-        
+        <section>
         <div className="c-gallery">
             {casas.map((casa)=>(
                 <Card_Casa casa={casa}/>
             ))}
         </div>
+        </section>
     )
 }

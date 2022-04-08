@@ -1,4 +1,4 @@
-
+import './Card_casa_info.css';
 
 
 export default function Card_casa_info({casa}){
