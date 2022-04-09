@@ -6,12 +6,12 @@ export default function ({casa}){
     
             <Link to={generatePath('/casas/:name', { name:casa.name })}>
             
-            <div>
-              <figure key={casa.id}>
-            <img class="imagen-casa" src={casa.logoURL} alt={casa.id}/>
+            <div>{casa.data &&
+              <figure key={JSON.stringify}>
+            <img src={casa.logoURL} alt={casa.id}/>
             <h2>{casa.name}</h2>
             
-          </figure></div>
+          </figure>} </div>
           </Link>
            )
         }

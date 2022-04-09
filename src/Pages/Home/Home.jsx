@@ -5,10 +5,8 @@ export default function Home(){
     return(
 
         <div className="home">
-        <div className="fondo-pantalla">
-        
-        <h1 className="titulo">GAMES OF <br/>THRONES</h1>
-        </div>
+
+        <h1 className="title">GAMES OF THRONES</h1>
         </div>
     )
 }

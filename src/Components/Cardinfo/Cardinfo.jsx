@@ -3,7 +3,7 @@ import './Cardinfo.css';
 export default function Cardinfo({character}){
     return(
         <div>
-            <figure key={character.id}>
+            <figure key={JSON.stringify}>
                 
                 <img src={character.image} alt={character.image}/>
                 <p>{character.name}</p>

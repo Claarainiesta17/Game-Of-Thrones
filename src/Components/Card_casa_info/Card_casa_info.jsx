@@ -1,11 +1,13 @@
 import './Card_casa_info.css';
 
 
-
 export default function Card_casa_info({casa}){
+  
+
     return(
         <div>
-            <figure key={casa.id}>
+          
+            <figure key={JSON.stringify}>
                 <img src={casa.logoURL} alt={casa.logoURL}/>
                 <p>{casa.name}</p>
                 <p>{casa.words}</p>
@@ -20,3 +22,6 @@ export default function Card_casa_info({casa}){
     )
     
 }
+
+
+//hacer una peticion con axios y hacer el if con {}&&
