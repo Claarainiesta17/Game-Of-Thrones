@@ -1,21 +1,5 @@
-body{
-    background-color: black;
-}
-
-section{
-    background-color: black;
-}
-
-.c-gallery{
-    background-color: black;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-}
-
-.b-Buscador{
+/*.b-Buscador{
     border: 0;
-    margin-left: 20px;
 }
 
 .input{
@@ -31,4 +15,4 @@ section{
     cursor: pointer;
     outline: none;
     display: inline-block;
-}
+}*/

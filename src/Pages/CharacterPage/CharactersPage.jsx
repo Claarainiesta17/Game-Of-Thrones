@@ -2,8 +2,9 @@ import { useEffect, useState } from "react";
 import axios from "axios"; 
 import Card from "../../Components/Card/Card"; 
 import "./character.css" 
- 
- 
+import Navigator from "../../NavFooter/Navigator";
+import Footer from "../../Components/Footer/Footer";
+
 export default function CharactersPage(){ 
     const [characters, setCharacters]= useState([]) 
     const [charfiltered, setCharFiltered] = useState([]) 
@@ -46,20 +47,21 @@ export default function CharactersPage(){
  
      
   return ( 
-     <section> 
-       <div className="b-Buscador"> 
-       <input placeholder={"search.."}className="input" type="text" onChange={handleSearch}/>  
- 
-         
- 
-     
-     </div> 
+     <section>
+     <div className="b-navbuscador">
+       <div className="b-Buscador">
+       <Navigator/>
+       <input placeholder={"🔍 Buscar..."}className="input" type="text" onChange={handleSearch}/>  
+     </div>
+     </div>
     <div className="c-gallery"> 
       
       {charfiltered.map((character) => ( 
         <Card character={character} /> 
       ))} 
-    </div></section> 
+    </div>
+    <Footer/>
+    </section> 
      
   ) 
  

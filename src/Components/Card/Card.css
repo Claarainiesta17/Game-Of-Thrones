@@ -29,18 +29,19 @@ article{
 }
 
 .character-name{
-    font-size: 25px;
-    margin-bottom: 40px;
-    margin-left: 10px;
-    font-family: GameofThrones;
+    font-size: 20px;
+    margin-bottom: 35px;
+    margin-right: 8px;
+    font-family: Game of Thrones;
 }
 
 
 .imagen-personajes{
-    width: 250px;
-    height: 350px;
+    width: 240px;
+    height: 340px;
 }
 
 article:hover{
     opacity: 0.75;
+    width: 120%;
 }

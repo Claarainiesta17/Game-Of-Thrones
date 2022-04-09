@@ -1,7 +1,6 @@
-.banderas{
+.nav{
     display: flex;
-    justify-content: end;
-    width: 100%;
+    justify-content: flex-end;
 }
 
 .logo1, .logo2{

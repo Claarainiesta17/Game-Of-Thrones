@@ -1,3 +1,4 @@
+import Navigator from '../../NavFooter/Navigator';
 import './Card_casa_info.css';
 
 
@@ -5,6 +6,7 @@ import './Card_casa_info.css';
 export default function Card_casa_info({casa}){
     return(
         <div>
+        <Navigator/>
             <figure key={casa.id}>
                 <img src={casa.logoURL} alt={casa.logoURL}/>
                 <p>{casa.name}</p>
