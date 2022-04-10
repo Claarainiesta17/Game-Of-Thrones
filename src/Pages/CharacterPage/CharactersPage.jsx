@@ -51,7 +51,7 @@ export default function CharactersPage(){
      <div className="b-navbuscador">
        <div className="b-Buscador">
        <Navigator/>
-       <input placeholder={"🔍 Buscar..."}className="input" type="text" onChange={handleSearch}/>  
+    <input placeholder={"🔍 Buscar..."} className="input" type="text" onChange={handleSearch}/>
      </div>
      </div>
     <div className="c-gallery"> 
