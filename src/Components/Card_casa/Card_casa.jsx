@@ -14,7 +14,4 @@ export default function ({casa}){
           </figure></div>
           </Link>
            )
-        }
-
-   
- 
+}

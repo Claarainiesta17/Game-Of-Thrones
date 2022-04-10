@@ -18,7 +18,7 @@ export default function CharactersPage(){
   const filtrar = ()=>{ 
     if ( search !=""){ 
       const filtrados = characters.filter((character)=> character.name.toLowerCase().includes(search.toLowerCase())) 
-    setCharFiltered(filtrados); 
+    setCharFiltered(filtrados);
  
     } 
      

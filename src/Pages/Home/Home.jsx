@@ -1,12 +1,19 @@
 import "./Home.css";
 import Footer from '../../Components/Footer/Footer';
 import Navigator from "../../NavFooter/Navigator";
+/*import { useTranslation } from "react-i18next";*/
 
-export default function Home(){
-    return(
+export default function HomePage() {
+    /*const { t, i18n } = useTranslation(["translation"]);
+
+    const changeLanguage = (code) => {
+        i18n.changeLanguage(code);
+};
+*/
+return(
         <div className="home">
         <Navigator/>
-        <h1 className="titulo">GAMES OF <br/>THRONES</h1>
+        <h1 className="titulo">{t("titulo")}</h1>
         <Footer/>
         </div>
     )
