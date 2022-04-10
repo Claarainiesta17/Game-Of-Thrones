@@ -13,7 +13,7 @@ export default function HomePage() {
 return(
         <div className="home">
         <Navigator/>
-        <h1 className="titulo">{t("titulo")}</h1>
+        <h1 className="titulo">GAME OF <br/>THRONES</h1>
         <Footer/>
         </div>
     )
