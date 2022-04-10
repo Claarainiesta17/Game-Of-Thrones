@@ -4,6 +4,7 @@ import Card from "../../Components/Card/Card";
 import "./character.css" 
 import Navigator from "../../NavFooter/Navigator";
 import Footer from "../../Components/Footer/Footer";
+import Cronologia from "../Cronologia/Cronologia";
 
 export default function CharactersPage(){ 
     const [characters, setCharacters]= useState([]) 
