@@ -20,5 +20,8 @@ export default function Charactersdetails(){
         console.log(Charactersdetails)
     }, [])
 
-    return<Cardinfo character={character}/>
-}
+    return(<div>
+   <a href="http://localhost:3000/characters"> <h1 className="flecha">← </h1></a>
+    <Cardinfo character={character}/>
+    </div>
+)}

@@ -2,7 +2,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Card_casa_info from "../../Components/Card_casa_info/Card_casa_info";
-
+import './Casasdetail.css';
 export default function Casasdetails(){
      const urlCasas = 'https://api.got.show/api/show/houses/'
      const [casa, setCasa] = useState ("")
@@ -17,6 +17,9 @@ export default function Casasdetails(){
          getCasas()
          console.log(Casasdetails)
      }, [])
-      return<Card_casa_info casa={casa}/>
-
+     return(<div>
+        <a href="http://localhost:3000/casas"> <h1 className="flecha">← </h1></a>
+        <Card_casa_info casa={casa}/>
+         </div>
+)
 }

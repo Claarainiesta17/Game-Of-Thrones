@@ -5,6 +5,7 @@ export default function Cronologia(){
         <div>
             <Navigator/>
         <h1>Aqui la cronologia</h1>
+        <a className="casita" href="http://localhost:3000/">home</a>
         </div>
     )
 }
