@@ -27,22 +27,12 @@ button{
     height: 70px;
     margin-right: 40px;
     margin-top: 30px;
-}
-
-
-.recuadro-blanco{
-    background: transparent;
-    outline: none;
-    border: none;
-    opacity: 1;
-    box-shadow: none;
+    margin-bottom: 0;
 }
 
 .icono-home2{
-    margin-top: 35px;
-    margin-left: -25px;
-    margin-right: 40px;
-    width: 60px;
-    height: 60px;
-    opacity: 1;
+    width: 70px;
+    height: 70px;
+    margin-top: 20px;
+    margin-left: 35px;
 }

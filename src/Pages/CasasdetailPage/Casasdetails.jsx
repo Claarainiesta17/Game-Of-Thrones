@@ -17,9 +17,10 @@ export default function Casasdetails(){
          getCasas()
          console.log(Casasdetails)
      }, [])
-     return(<div>
-        <a href="http://localhost:3000/casas"> <h1 className="flecha">← </h1></a>
-        <Card_casa_info casa={casa}/>
-         </div>
-)
-}
+      return(
+          <div>
+              <a href="http://localhost:3000/casas">Volver</a>
+      <Card_casa_info casa={casa}/>
+      </div>
+
+      )}

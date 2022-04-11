@@ -1,5 +1,5 @@
-import { generatePath, Link } from "react-router-dom"
-import './Card_casa.css';
+import { generatePath, Link } from 'react-router-dom'
+import './Card_casa.css'
 
 export default function ({casa}){
     return(

@@ -12,7 +12,9 @@ export default function HomePage() {
 
 return(
         <div className="home">
+
         <Navigator/>
+        
         <h1 className="titulo">{t("title")}</h1>
         <Footer/>
         </div>
