@@ -4,7 +4,6 @@ import Card from "../../Components/Card/Card";
 import "./character.css" 
 import Navigator from "../../NavFooter/Navigator";
 import Footer from "../../Components/Footer/Footer";
-import Cronologia from "../Cronologia/Cronologia";
 
 export default function CharactersPage(){ 
     const [characters, setCharacters]= useState([]) 
@@ -49,10 +48,11 @@ export default function CharactersPage(){
      
   return ( 
      <section>
+       <a href="http://localhost:3000/">-Home</a>
      <div className="b-navbuscador">
        <div className="b-Buscador">
        <Navigator/>
-       <input placeholder={"🔍 Buscar..."}className="input" type="text" onChange={handleSearch}/>  
+    <input placeholder={"🔍 Buscar..."} className="input" type="text" onChange={handleSearch}/>
      </div>
      </div>
     <div className="c-gallery"> 

@@ -7,11 +7,13 @@ import LanguageDetector from "i18next-browser-languagedetector";
 const resources = {
     es: {
         translation: {
-            title: "Juego de tronos",
+            title: "JUEGO DE TRONOS",
             characters: "PERSONAJES",
             houses: "CASAS",
             cronology: "CRONOLOGIA",
             find: "BUSCAR",
+            name: "NOMBRE",
+            house: "CASA",
         }
     },
     en: {
@@ -21,6 +23,8 @@ const resources = {
             houses: "HOUSES",
             cronology: "CRONOLOGY",
             find: "FIND",
+            name: "NAME",
+            house: "HOUSE",
 
         }
     }
