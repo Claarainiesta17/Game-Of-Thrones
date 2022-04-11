@@ -1,5 +1,7 @@
 import "./nav.css";
-import { useTranslation } from "react-i18next";*/
+import { useTranslation } from "react-i18next";
+import { Route } from "react-router-dom";
+
 export default function Navigator(){
     const { t, i18n } = useTranslation("translation");
 
@@ -10,10 +12,9 @@ export default function Navigator(){
     return(
         <div className="nav">
         <div className="banderas">
-        <img class="logo1" src="https://cdn-icons-png.flaticon.com/512/330/330557.png" alt="logo-españa"/>
-        <img class="logo2" src="https://cdn-icons-png.flaticon.com/512/555/555417.png" alt="logo-inglaterra"/>
-        <button onClick={() => i18n.changeLanguage("es")}>ES</button>
-        <button onClick={() => i18n.changeLanguage("en")}>EN</button>
+        <button><img class="logo1" src="https://cdn-icons-png.flaticon.com/512/330/330557.png" alt="logo-españa" onClick={() => i18n.changeLanguage("es")}/></button>
+        <button><img class="logo2" src="https://cdn-icons-png.flaticon.com/512/555/555417.png" alt="logo-inglaterra" onClick={() => i18n.changeLanguage("en")}/></button>
+       
         </div>
         </div>
     )

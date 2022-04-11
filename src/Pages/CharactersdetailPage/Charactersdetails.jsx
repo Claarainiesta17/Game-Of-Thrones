@@ -6,6 +6,7 @@ import Cardinfo from "../../Components/Cardinfo/Cardinfo";
 
 export default function Charactersdetails(){
 
+  
     const urlGot = 'https://api.got.show/api/show/characters/'
     const [character, setCharacter] = useState("")
     let {id} = useParams('id')
@@ -20,5 +21,11 @@ export default function Charactersdetails(){
         console.log(Charactersdetails)
     }, [])
 
-    return<Cardinfo character={character}/>
-}
+    return(
+        <div>
+   <a href="http://localhost:3000/characters">-volver</a>
+   <a href="http://localhost:3000/">-Home</a>
+        
+    <Cardinfo character={character}/>
+    </div>
+    )}
