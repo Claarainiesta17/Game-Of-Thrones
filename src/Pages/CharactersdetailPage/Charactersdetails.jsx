@@ -23,8 +23,7 @@ export default function Charactersdetails(){
 
     return(
         <div>
-   <a href="http://localhost:3000/characters">-volver</a>
-   <a href="http://localhost:3000/">-Home</a>
+   <a href="http://localhost:3000/characters">Volver</a>
         
     <Cardinfo character={character}/>
     </div>

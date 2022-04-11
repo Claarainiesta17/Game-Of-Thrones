@@ -48,7 +48,6 @@ export default function CharactersPage(){
      
   return ( 
      <section>
-       <a href="http://localhost:3000/">-Home</a>
      <div className="b-navbuscador">
        <div className="b-Buscador">
        <Navigator/>

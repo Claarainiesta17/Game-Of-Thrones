@@ -2,7 +2,7 @@ import Navigator from '../../NavFooter/Navigator';
 import './Card_casa_info.css';
 
 export default function Card_casa_info({casa}){
-  
+
 
     return(
         <div>
@@ -10,6 +10,7 @@ export default function Card_casa_info({casa}){
         
             <figure key={JSON.stringify}>
                 <img src={casa.logoURL} alt={casa.logoURL}/>
+                <div className="detalle-casas">
                 <p>{casa.name}</p>
                 <p>{casa.seat}</p>
                 <p>{casa.region}</p>
@@ -18,9 +19,8 @@ export default function Card_casa_info({casa}){
                 <p>{casa.createdAt}</p>
             
                 
-
+</div>
             </figure>
         </div>
     )
-    
 }
