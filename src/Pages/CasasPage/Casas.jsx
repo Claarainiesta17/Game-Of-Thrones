@@ -22,7 +22,7 @@ export default function Casas(){
 
     return(
         <section>
-            <a href="http://localhost:3000/"> ← </a>
+            <a href="http://localhost:3000/">-Home</a>
         <Navigator/>
         <div className="c-gallery">
             {casas.map((casa)=>(
