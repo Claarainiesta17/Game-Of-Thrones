@@ -1,7 +1,14 @@
 import Navigator from '../../NavFooter/Navigator';
 import './Cardinfo.css';
+/*import { useTranslation } from 'react-i18next';*/
 
 export default function Cardinfo({character}){
+    /*const { t, i18n } = useTranslation("translation");
+
+    const changeLanguage = (code) => {
+        i18n.changeLanguage(code);
+    };*/
+
     return(
         <div>
         <Navigator/>

@@ -7,11 +7,20 @@ import Casas from './Pages/CasasPage/Casas';
 import Casasdetails from './Pages/CasasdetailPage/Casasdetails';
 import Cronologia from './Pages/Cronologia/Cronologia';
 import Home from './Pages/Home/Home';
-
+/*import { useTranslation } from "react-i18next";*/
 
 function App() {
+  /*const [isSpanish, setIsSpanish] = useState(true);
+  const { t, i18n } = useTranslation(["translation"]);
+
+  const changeLanguage = (code) => {
+    i18n.changeLanguage(code);
+  };
+*/
   return (
     <div className="App">
+    <div>
+    </div>
     <Router>
       <Routes>
         <Route path="/" element={<Home/>}/>

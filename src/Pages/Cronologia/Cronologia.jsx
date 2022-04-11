@@ -5,7 +5,7 @@ import Card from "../../Components/Card/Card";
 
 
 export default function Cronologia(){
-    const [characters, setCharacters] = useState([])
+    const {characters, setCharacters} = useState([])
     const [sort, setSort] = useState("")
     
         setSort (ev.target.value)
