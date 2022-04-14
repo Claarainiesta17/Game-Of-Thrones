@@ -1,4 +1,4 @@
-import './Charactersdetail.css'
+import './Charactersdetail.css';
 import axios from "axios";
 import { useEffect , useState} from "react";
 import { useParams } from "react-router-dom";
@@ -23,8 +23,7 @@ export default function Charactersdetails(){
 
     return(
         <div>
-   <a href="http://localhost:3000/characters">Volver</a>
-        
+   <a href="http://localhost:3000/characters" className="flecha">←</a>
     <Cardinfo character={character}/>
     </div>
     )}

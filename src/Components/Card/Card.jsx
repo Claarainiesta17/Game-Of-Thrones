@@ -1,7 +1,6 @@
 
 import { generatePath, Link } from "react-router-dom"
 import "./Card.css"
-
 export default function({character}) {
     return(
         <Link to={generatePath('/characters/:name', {name: character.name})}>
@@ -12,7 +11,7 @@ export default function({character}) {
                    <h1 class="character-name">{character.name}</h1>
                    </article>
                 </section>
-            </div>
+        </div>
         </Link>
     )
 }

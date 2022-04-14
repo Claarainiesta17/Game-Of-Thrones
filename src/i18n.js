@@ -12,8 +12,18 @@ const resources = {
             houses: "CASAS",
             cronology: "CRONOLOGIA",
             find: "BUSCAR",
-            name: "NOMBRE",
             house: "CASA",
+            allegiances: "ALIANZAS",
+            appearances: "APARICIONES",
+            father: "PADRE",
+            siblings: "DESCENDIENTES",
+            titles: "TITULOS",
+            name: "NOMBRE",
+            seat: "SEDE",
+            region: "REGION",
+            religion: "RELIGIÓN",
+            createdAt: "FUNDACIÓN",
+            appearance: "APARIENCIA",
         }
     },
     en: {
@@ -23,9 +33,17 @@ const resources = {
             houses: "HOUSES",
             cronology: "CRONOLOGY",
             find: "FIND",
-            name: "NAME",
             house: "HOUSE",
-
+            allegiances: "ALLEGIANCES",
+            appearances: "APPEARANCES",
+            father: "FATHER",
+            siblings: "SIBLINGS",
+            titles: "TITLES",
+            name: "NAME",
+            seat: "SEAT",
+            religion: "RELIGION",
+            createdAt: "CREATED AT",
+            appearance: "APPEARANCE",
         }
     }
 };

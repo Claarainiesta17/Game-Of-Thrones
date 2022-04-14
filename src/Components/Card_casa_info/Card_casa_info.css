@@ -1,3 +1,7 @@
 .detalle-casas{
     text-transform: lowercase;
 }
+
+p{
+    font-family: GameofThrones;
+}
