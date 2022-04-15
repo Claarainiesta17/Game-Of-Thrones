@@ -1,6 +1,6 @@
 
 import { generatePath, Link } from "react-router-dom"
-import "./Card.css"
+import "./Card.css";
 export default function({character}) {
     return(
         <Link to={generatePath('/characters/:name', {name: character.name})}>

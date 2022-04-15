@@ -26,25 +26,39 @@ export default function Cardinfo({character}){
 }, [character.house, setCasas]);
 
     return(
-        <div>
+        <div key={character.id}>
         <Navigator/>
-            <figure key={character.id}>
-            <img src={character.image} alt=""/>
-            <h2>{character.name}</h2>
+            <figure className="b-section">
+            <img className="foto" src={character.image} alt=""/>
+            <h2 className="nombre">{character.name}</h2>
+            </figure>
+            <div className="toda-seccion">
+            <figure>
             <h3>{t("house")}</h3>
-            {casa && <img src={casa.logoURL} alt=""/>}
+            {casa && <img className="logo-casa" src={casa.logoURL} alt=""/>}
             <p>{character.house}</p>
+            </figure>
+            <figure>
             <h3>{t("allegiances")}</h3>
             <p>{character.allegiances}</p>
+            </figure>
+            <figure>
             <h3>{t("appearances")}</h3>
             <p>{character.appearances}</p>
+            </figure>
+            <figure>
             <h3>{t("father")}</h3>
             <p>{character.father}</p>
+            </figure>
+            <figure>
             <h3>{t("siblings")}</h3>
             <p>{character.siblings}</p>
+            </figure>
+            <figure>
             <h3>{t("titles")}</h3>
             <p>{character.titles}</p>
             </figure>
+            </div>
         </div>
     )
 

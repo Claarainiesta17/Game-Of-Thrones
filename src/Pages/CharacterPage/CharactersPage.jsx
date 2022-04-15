@@ -4,6 +4,8 @@ import Card from "../../Components/Card/Card";
 import "./character.css" 
 import Navigator from "../../NavFooter/Navigator";
 import Footer from "../../Components/Footer/Footer";
+import SimpleBar from 'simplebar-react';
+import 'simplebar/dist/simplebar.min.css';
 
 export default function CharactersPage(){ 
     const [characters, setCharacters]= useState([]) 
@@ -40,29 +42,28 @@ export default function CharactersPage(){
         getCharacters() 
     },[]) 
  
-    useEffect(()=>{ 
-        
-      filtrar() 
-  },[search]) 
- 
-     
-  return ( 
-     <section>
-     <div className="b-navbuscador">
-       <div className="b-Buscador">
-       <Navigator/>
+    useEffect(()=>{
+
+      filtrar()
+  },[search])
+
+  return (
+    <section>
+    <div className="b-navbuscador">
+      <div className="b-Buscador">
+      <Navigator/>
     <input placeholder={"🔍 Buscar..."} className="input" type="text" onChange={handleSearch}/>
-     </div>
-     </div>
-    <div className="c-gallery"> 
-      
-      {charfiltered.map((character) => ( 
-        <Card character={character} /> 
-      ))} 
     </div>
+    </div>
+    <SimpleBar style={{ maxHeight: 400 }}>
+    <div className="c-gallery">
+      {charfiltered.map((character) => (
+        <Card character={character} />
+      ))}
+    </div>
+    </SimpleBar>
     <Footer/>
-    </section> 
-     
-  ) 
- 
+    </section>
+  )
+
 }
