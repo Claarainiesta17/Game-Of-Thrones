@@ -19,7 +19,6 @@ export default function Casasdetails(){
      }, [])
       return(
           <div>
-              <a href="http://localhost:3000/casas">←</a>
       <Card_casa_info casa={casa}/>
       </div>
 

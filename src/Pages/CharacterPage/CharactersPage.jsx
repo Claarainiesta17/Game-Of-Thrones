@@ -6,6 +6,7 @@ import Navigator from "../../NavFooter/Navigator";
 import Footer from "../../Components/Footer/Footer";
 import SimpleBar from 'simplebar-react';
 import 'simplebar/dist/simplebar.min.css';
+import Icono from "../../Components/Icono/Icono";
 
 export default function CharactersPage(){ 
     const [characters, setCharacters]= useState([]) 
@@ -51,6 +52,7 @@ export default function CharactersPage(){
     <section>
     <div className="b-navbuscador">
       <div className="b-Buscador">
+      <Icono/>
       <Navigator/>
     <input placeholder={"🔍 Buscar..."} className="input" type="text" onChange={handleSearch}/>
     </div>

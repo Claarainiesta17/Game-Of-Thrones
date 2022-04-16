@@ -2,6 +2,7 @@
 import Navigator from "../../NavFooter/Navigator";
 import axios from "axios";
 import Card from "../../Components/Card/Card"; 
+import Icono from "../../Components/Icono/Icono";
 
 
 export default function Cronologia(){
@@ -43,6 +44,7 @@ export default function Cronologia(){
 
       return(<section>
         <div>
+        <Icono/>
             <Navigator/>
         </div>
         <div className="c-gallery"> 
@@ -52,5 +54,4 @@ export default function Cronologia(){
         ))} 
       </div></section>
     )
-}
-*/
+}*/
