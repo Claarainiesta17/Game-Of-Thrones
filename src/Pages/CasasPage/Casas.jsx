@@ -6,6 +6,7 @@ import Navigator from "../../NavFooter/Navigator";
 import "./Casas.css";
 import SimpleBar from 'simplebar-react';
 import 'simplebar/dist/simplebar.min.css';
+import Icono from "../../Components/Icono/Icono";
 
 
 
@@ -24,6 +25,7 @@ export default function Casas(){
 
     return(
         <section>
+        <Icono/>
         <Navigator/>
         <SimpleBar className="simplebar" style={{ maxHeight: 450 }}>
         <div className="c-gallery">

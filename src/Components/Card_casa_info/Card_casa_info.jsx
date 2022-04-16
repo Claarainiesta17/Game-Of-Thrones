@@ -1,6 +1,7 @@
 import Navigator from '../../NavFooter/Navigator';
 import './Card_casa_info.css';
 import { useTranslation } from 'react-i18next';
+import Icono from '../Icono/Icono';
 
 export default function Card_casa_info({casa}){
     const { t, i18n } = useTranslation("translation");
@@ -11,7 +12,9 @@ export default function Card_casa_info({casa}){
 
     return(
         <div key={JSON.stringify}>
+        <Icono/>
         <Navigator/>
+        <a href="http://localhost:3000/casas" className="flecha">←</a>
             <figure className="b-section-casas">
                 <img className="logo-casas" src={casa.logoURL} alt={casa.logoURL}/>
                 <h3 className="nombre-casa">{casa.name}</h3>

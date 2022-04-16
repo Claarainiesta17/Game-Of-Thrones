@@ -89,7 +89,10 @@ useEffect(()=>{
 
 
             <figure>
+<<<<<<< HEAD
         
+=======
+>>>>>>> 7433224334f664a6a771fbfbbe9fdff1798dc7a7
             <h3>{t("titles")}</h3>
             <SimpleBar style={{ maxHeight: 350 }}>
             <p>{character.titles}</p>

@@ -1,7 +1,12 @@
 /*import { useEffect, useState } from "react";
 
 import axios from "axios";
+<<<<<<< HEAD
 
+=======
+import Card from "../../Components/Card/Card"; 
+import Icono from "../../Components/Icono/Icono";
+>>>>>>> 7433224334f664a6a771fbfbbe9fdff1798dc7a7
 
 
 export default function Cronologia(){
@@ -30,4 +35,20 @@ export default function Cronologia(){
      )
      }
 
+<<<<<<< HEAD
+=======
+
+      return(<section>
+        <div>
+        <Icono/>
+            <Navigator/>
+        </div>
+        <div className="c-gallery"> 
+      
+        {sort.map((character) => ( 
+          <Card character={character} /> 
+        ))} 
+      </div></section>
+    )
+>>>>>>> 7433224334f664a6a771fbfbbe9fdff1798dc7a7
 }*/
