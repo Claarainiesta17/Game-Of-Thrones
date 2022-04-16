@@ -39,7 +39,10 @@ useEffect(()=>{
     .catch((error) => {
         console.log(error);
     });
-}, [character.appearances, setAppearances])
+}, [character.appearances, setAppearances]);
+
+
+
 
 
     return(
@@ -86,8 +89,9 @@ useEffect(()=>{
 
 
             <figure>
-            <SimpleBar style={{ maxHeight: 350 }}>
+        
             <h3>{t("titles")}</h3>
+            <SimpleBar style={{ maxHeight: 350 }}>
             <p>{character.titles}</p>
             </SimpleBar>
             </figure>
