@@ -3,6 +3,9 @@ import './Cardinfo.css';
 import { useTranslation } from 'react-i18next';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
+import SimpleBar from 'simplebar-react';
+import 'simplebar/dist/simplebar.min.css';
+
 
 export default function Cardinfo({character}){
     const { t, i18n } = useTranslation("translation");
@@ -25,6 +28,20 @@ export default function Cardinfo({character}){
         });
 }, [character.house, setCasas]);
 
+const [appearances, setAppearances] = useState({});
+useEffect(()=>{
+    axios({
+        url: `https://api.got.show/api/show/characters/${character.appearances}`,
+    })
+    .then((response)=>{
+        setAppearances(response.data);
+    })
+    .catch((error) => {
+        console.log(error);
+    });
+}, [character.appearances, setAppearances])
+
+
     return(
         <div key={character.id}>
         <Navigator/>
@@ -38,25 +55,41 @@ export default function Cardinfo({character}){
             {casa && <img className="logo-casa" src={casa.logoURL} alt=""/>}
             <p>{character.house}</p>
             </figure>
+
             <figure>
             <h3>{t("allegiances")}</h3>
             <p>{character.allegiances}</p>
             </figure>
+    
+
             <figure>
-            <h3>{t("appearances")}</h3>
+        
+            <h3 className='apariencias'>{t("appearances")}</h3>
+            <SimpleBar style={{ maxHeight: 350 }}>
             <p>{character.appearances}</p>
-            </figure>
+            </SimpleBar>
+           </figure>
+
+
             <figure>
+            
             <h3>{t("father")}</h3>
             <p>{character.father}</p>
+        
             </figure>
+        
+    
             <figure>
             <h3>{t("siblings")}</h3>
             <p>{character.siblings}</p>
-            </figure>
+        </figure>
+
+
             <figure>
+            <SimpleBar style={{ maxHeight: 350 }}>
             <h3>{t("titles")}</h3>
             <p>{character.titles}</p>
+            </SimpleBar>
             </figure>
             </div>
         </div>
