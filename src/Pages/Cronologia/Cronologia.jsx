@@ -71,7 +71,19 @@ export default function Cronologia(){
           ))}
 
         </div>
+<div className="der-box-big">
+  {inparCharacter.map((character)=>(
+    <div className="der-box-small" key={character.name}>
+      {character.age  && (
+        <p className="der-box-small_age">{character.age.age}</p>
+      )}
+      <p>{character.name}</p>
+      <img className="der-box-small_img"
+      src={character.image} alt="img"/>
 
+    </div>
+  ))}
+</div>
       </div>
         
       </section>

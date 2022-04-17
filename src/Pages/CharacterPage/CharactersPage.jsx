@@ -57,7 +57,7 @@ export default function CharactersPage(){
     <input placeholder= { "Buscar..."} className="input" type="text" onChange={handleSearch}/>
     </div>
     </div>
-    <SimpleBar style={{ maxHeight: 900}}>
+    <SimpleBar style={{ maxHeight: 500}}>
     <div className="c-gallery">
       {charfiltered.map((character) => (
         <Card character={character} />
