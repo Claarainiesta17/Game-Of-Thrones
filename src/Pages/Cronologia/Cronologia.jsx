@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import Navigator from "../../NavFooter/Navigator";
 import axios from "axios";
 import Card from "../../Components/Card/Card"; 
-
+import './Cronologia.css';
 
 export default function Cronologia(){
  
