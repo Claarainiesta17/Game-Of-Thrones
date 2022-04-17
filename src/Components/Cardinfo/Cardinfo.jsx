@@ -41,27 +41,30 @@ useEffect(()=>{
     });
 }, [character.appearances, setAppearances]);
 
-
-
-
-
     return(
         <div key={character.id}>
         <Navigator/>
+        
             <figure className="b-section">
+                
             <img className="foto" src={character.image} alt=""/>
             <h2 className="nombre">{character.name}</h2>
             </figure>
             <div className="toda-seccion">
+
+
             <figure>
             <h3>{t("house")}</h3>
             {casa && <img className="logo-casa" src={casa.logoURL} alt=""/>}
             <p>{character.house}</p>
             </figure>
 
+
             <figure>
+                
             <h3>{t("allegiances")}</h3>
             <p>{character.allegiances}</p>
+            
             </figure>
     
 
@@ -89,10 +92,6 @@ useEffect(()=>{
 
 
             <figure>
-<<<<<<< HEAD
-        
-=======
->>>>>>> 7433224334f664a6a771fbfbbe9fdff1798dc7a7
             <h3>{t("titles")}</h3>
             <SimpleBar style={{ maxHeight: 350 }}>
             <p>{character.titles}</p>

@@ -12,24 +12,52 @@ import Icono from "../../Components/Icono/Icono";
 
 export default function Casas(){
    const [casas, setCasas] = useState([])
+   const [casasFiltered, setCasasFiltered] = useState([])
+   const [search, setSearch] = useState("")
+
+   const handleSearch = (ev)=>{ 
+    setSearch (ev.target.value) 
+    console.log(ev.target.value) 
+  } 
+
+  const filtrar = ()=>{
+      if ( search !=""){
+          const filtrados = casas.filter((casa)=> casa.name.toLowerCase().includes(search.toLowerCase()))
+         setCasasFiltered(filtrados);
+        }
+  }
+
+
+  const getCasas = async () =>{
+    const res = await axios.get (`https://api.got.show/api/show/houses/`)
+
+    console.log(res.data)
+    setCasas(res.data)
+    setCasasFiltered(res.data)
+
+  }
+  
+
+   
+   useEffect(()=>{
+    getCasas()
+
+      
+   },[])
 
    useEffect(()=>{
-       const getCasas = async()=>{
-           const res = await axios.get (`https://api.got.show/api/show/houses/`)
+       filtrar()
+   },[search])
 
-           console.log(res.data)
-           setCasas(res.data)
-       }
-       getCasas()
-   },[])
 
     return(
         <section>
         <Icono/>
         <Navigator/>
+        <input placeholder= { "Buscar..."} className="input" type="text" onChange={handleSearch}/>
         <SimpleBar className="simplebar" style={{ maxHeight: 450 }}>
         <div className="c-gallery">
-            {casas.map((casa)=>(
+            {casasFiltered.map((casa)=>(
                 <Card_Casa casa={casa}/>
             ))}
         </div>
@@ -37,4 +65,4 @@ export default function Casas(){
         <Footer/>
         </section>
     )
-}
+            }

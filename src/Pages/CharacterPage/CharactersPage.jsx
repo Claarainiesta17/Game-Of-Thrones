@@ -54,10 +54,10 @@ export default function CharactersPage(){
       <div className="b-Buscador">
       <Icono/>
       <Navigator/>
-    <input placeholder={"🔍 Buscar..."} className="input" type="text" onChange={handleSearch}/>
+    <input placeholder= { "Buscar..."} className="input" type="text" onChange={handleSearch}/>
     </div>
     </div>
-    <SimpleBar style={{ maxHeight: 400 }}>
+    <SimpleBar style={{ maxHeight: 900}}>
     <div className="c-gallery">
       {charfiltered.map((character) => (
         <Card character={character} />
