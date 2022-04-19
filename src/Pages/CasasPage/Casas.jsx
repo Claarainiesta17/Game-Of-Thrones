@@ -54,8 +54,9 @@ export default function Casas(){
         <section>
         <Icono/>
         <Navigator/>
-        <input placeholder= { "Buscar..."} className="input" type="text" onChange={handleSearch}/>
-        <SimpleBar className="simplebar" style={{ maxHeight: 450 }}>
+        <img className="lupa" src="https://cdn.zeplin.io/5e1c73baff24c3be01ba9cca/assets/15bd4fae-6df6-4fca-8e4a-4889bba7186c.svg" alt=""/>
+        <input placeholder= { "    Buscar..."} className="input" type="text" onChange={handleSearch}/>
+        <SimpleBar className="simplebar" style={{ maxHeight: 420 }}>
         <div className="c-gallery">
             {casasFiltered.map((casa)=>(
                 <Card_Casa casa={casa}/>

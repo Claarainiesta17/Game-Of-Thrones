@@ -30,3 +30,7 @@ p{
     display: flex;
     justify-content: space-evenly;
 }
+
+.flecha-img{
+    position: absolute;
+}

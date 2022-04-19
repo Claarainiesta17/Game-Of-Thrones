@@ -33,3 +33,9 @@ section{
     outline: none;
     display: inline-block;
 }
+
+.lupa{
+    width: 13px;
+    position: absolute;
+    margin-top: 10px;
+}

@@ -54,7 +54,8 @@ export default function CharactersPage(){
       <div className="b-Buscador">
       <Icono/>
       <Navigator/>
-    <input placeholder= { "Buscar..."} className="input" type="text" onChange={handleSearch}/>
+      <img className="lupa" src="https://cdn.zeplin.io/5e1c73baff24c3be01ba9cca/assets/15bd4fae-6df6-4fca-8e4a-4889bba7186c.svg" alt=""/>
+    <input placeholder= { "    Buscar..."} className="input" type="text" onChange={handleSearch}/>
     </div>
     </div>
     <SimpleBar style={{ maxHeight: 400}}>

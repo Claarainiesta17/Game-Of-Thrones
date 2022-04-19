@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import Navigator from "../../NavFooter/Navigator";
 import axios from "axios";
-import Card from "../../Components/Card/Card"; 
 import './Cronologia.css';
-
+import Footer from "../../Components/Footer/Footer";
+import Icono from "../../Components/Icono/Icono";
 export default function Cronologia(){
  
   
@@ -46,35 +46,49 @@ export default function Cronologia(){
      }
      
       
-      return(<section>
-       
+      return(
+<div>
         <div>
+        <Icono/>
             <Navigator/>
         </div>
-      <div className="contenedorCronology">
+        <section className="timeline-container">
+<div className="contenedorCronology">
         <div className="box-izq">
           <button
           id="asc"
-          className="b-cronology"onClick={()=>filterCharacter(characters)}
+          className="b-redondo" onClick={()=>filterCharacter(characters)}
           >
             {parCharacter[0] && parCharacter[0].age.age}
           </button>
-          <img src="https://w7.pngwing.com/pngs/243/26/png-transparent-drawing-long-arrow-angle-arrow-arrowhead.png"width="20px" alt="" className={showCronology ? "flecha" : "flecha_reves"}/>
+          <img src="https://cdn.zeplin.io/5e1c73baff24c3be01ba9cca/assets/26cb7354-51d3-4c56-b9bb-2f455e369f0a.svg" width="20px" alt="" className={showCronology ? "flecha" : "flecha_reves"}/>
           {parCharacter.map((character)=>(
             <div className="box-izq-small" key={character.name}>
               {character.age && (
                 <p className="box-izq-small_age">{character.age.age}</p>
               )}
-    
+
                 <p>{character.name}</p>
-                <img className="box-izq.small_age" src={character.image} alt="img"/> </div>
+                <img className="box-izq-small_img" src={character.image} alt="img"/> </div>
           ))}
 
         </div>
+<div className="der-box-big">
+  {inparCharacter.map((character)=>(
+    <div className="der-box-small" key={character.name}>
+      {character.age  && (
+        <p className="der-box-small_age">{character.age.age}</p>
+      )}
+      <p>{character.name}</p>
+      <img className="der-box-small_img"
+      src={character.image} alt="img"/>
 
+    </div>
+  ))}
+</div>
       </div>
-        
       </section>
+      <Footer/>
+      </div>
     )
-        }
-      
+}

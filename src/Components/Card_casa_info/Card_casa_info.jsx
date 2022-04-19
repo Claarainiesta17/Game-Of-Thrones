@@ -15,7 +15,7 @@ export default function Card_casa_info({casa}){
         <div key={JSON.stringify}>
         <Icono/>
         <Navigator/>
-        <a href="http://localhost:3000/casas" className="flecha">←</a>
+        <a href="http://localhost:3000/casas" className="flecha"><img className="flecha-img" src="https://cdn.zeplin.io/5e1c73baff24c3be01ba9cca/assets/e042365d-a1dc-4fef-ab6c-245a7c85f922.svg" alt="" /></a>
 
       
             <figure className="b-section-casas">

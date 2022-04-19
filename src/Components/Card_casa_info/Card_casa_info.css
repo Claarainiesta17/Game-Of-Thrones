@@ -19,9 +19,6 @@ p{
     margin-bottom: 50px;
 }
 
-.flecha{
-    margin-top: 10px;
-    margin-bottom: 0;
-    margin-left: 20px;
+.flecha-img{
     position: absolute;
 }

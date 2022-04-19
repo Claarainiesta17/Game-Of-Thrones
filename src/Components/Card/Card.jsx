@@ -2,7 +2,8 @@
 import { generatePath, Link } from "react-router-dom"
 import "./Card.css";
 export default function({character}) {
-    return(
+    return(<>
+        {character.image &&(
         <Link to={generatePath('/characters/:name', {name: character.name})}>
             <div>
                 <section key={character.id}>
@@ -12,6 +13,6 @@ export default function({character}) {
                    </article>
                 </section>
         </div>
-        </Link>
+        </Link>)}</>
     )
 }
