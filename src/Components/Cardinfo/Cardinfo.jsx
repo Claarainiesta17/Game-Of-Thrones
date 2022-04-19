@@ -17,6 +17,4 @@ export default function Cardinfo({character}){
             </figure>
         </div>
     )
-
-
 }
