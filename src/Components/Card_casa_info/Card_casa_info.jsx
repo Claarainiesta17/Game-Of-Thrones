@@ -2,7 +2,6 @@ import Navigator from '../../NavFooter/Navigator';
 import './Card_casa_info.css';
 import { useTranslation } from 'react-i18next';
 import Icono from '../Icono/Icono';
-import { toHaveFormValues } from '@testing-library/jest-dom/dist/matchers';
 
 export default function Card_casa_info({casa}){
     const { t, i18n } = useTranslation("translation");
